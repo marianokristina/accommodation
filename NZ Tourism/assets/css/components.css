@@ -1,0 +1,171 @@
+section {
+  padding: 5rem 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 120rem;
+  /* padding: 0 1.5rem; */
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: #141313;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
+}
+
+.navbar img {
+  height: 45px;
+}
+
+.nav-title {
+  color: #ffffff;
+  margin-top: 3px;
+}
+
+.main-body {
+  width: 100%;
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1629014013126-4808339b9e60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")
+    center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+
+.main-body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  background-color: transparent;
+  z-index: -1;
+}
+
+.main-heading {
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 3px;
+}
+
+.subtitle {
+  font-family: "Cookie", cursive;
+  font-size: 40px;
+  font-weight: 3;
+  text-decoration: none;
+  margin-bottom: 25px;
+}
+
+.btn {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 30px;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn-gradient {
+  background-color: #f8b41b;
+}
+
+.btn-gradient:hover {
+  background-color: #a46c6f;
+}
+
+.dots {
+  font-size: 15px;
+  margin-left: 1px;
+  opacity: 70%;
+}
+
+.booking {
+  background-color: #141313;
+  padding: 25px;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.input-label {
+  display: block;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.input,
+.options {
+  outline: none;
+  border: none;
+  width: 100%;
+  min-height: 25px;
+  padding: 4px;
+  font-weight: bold;
+  color: #221306;
+  letter-spacing: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  resize: none;
+}
+
+.form-btn {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.btn-purple {
+  background-color: #f8b41b;
+}
+
+.btn-purple:hover {
+  background-color: #a46c6f;
+}
+
+
+
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1200px) {
+  .homepage {
+    max-width: 100vh;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+  .homepage {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  @viewport {
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  @viewport {
+    width: 100vw;
+  }
+}
